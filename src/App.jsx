@@ -1,22 +1,22 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
-import NotFoundPage from "./pages/NotFoundPage";
+import React, { Fragment } from "react";
+import Menu from './components/layouts/Menu';
+import Footer from './components/layouts/Footer';
+
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Portfolio/>
-        </Route>
+    <Fragment>
+            <Menu/>
+            <AboutMe/>
+            <Projects/>
+            <Contact/>
+            <Footer/>
 
-        <Route>
-          <NotFoundPage/>
-        </Route>
-      </Switch>
-    </Router>
+      </Fragment>
   );
 }
 
