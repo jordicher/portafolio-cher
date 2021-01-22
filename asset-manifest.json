@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/portafolio-cher/static/css/main.e3a25075.chunk.css",
-    "main.js": "/portafolio-cher/static/js/main.8957f47a.chunk.js",
-    "main.js.map": "/portafolio-cher/static/js/main.8957f47a.chunk.js.map",
+    "main.js": "/portafolio-cher/static/js/main.ef9d03dc.chunk.js",
+    "main.js.map": "/portafolio-cher/static/js/main.ef9d03dc.chunk.js.map",
     "runtime-main.js": "/portafolio-cher/static/js/runtime-main.a280d16c.js",
     "runtime-main.js.map": "/portafolio-cher/static/js/runtime-main.a280d16c.js.map",
-    "static/js/2.2642288d.chunk.js": "/portafolio-cher/static/js/2.2642288d.chunk.js",
-    "static/js/2.2642288d.chunk.js.map": "/portafolio-cher/static/js/2.2642288d.chunk.js.map",
+    "static/js/2.ffc962c6.chunk.js": "/portafolio-cher/static/js/2.ffc962c6.chunk.js",
+    "static/js/2.ffc962c6.chunk.js.map": "/portafolio-cher/static/js/2.ffc962c6.chunk.js.map",
     "index.html": "/portafolio-cher/index.html",
     "static/css/main.e3a25075.chunk.css.map": "/portafolio-cher/static/css/main.e3a25075.chunk.css.map",
-    "static/js/2.2642288d.chunk.js.LICENSE.txt": "/portafolio-cher/static/js/2.2642288d.chunk.js.LICENSE.txt",
+    "static/js/2.ffc962c6.chunk.js.LICENSE.txt": "/portafolio-cher/static/js/2.ffc962c6.chunk.js.LICENSE.txt",
     "static/media/JordiArmengolChertoCV.45ec1ded.png": "/portafolio-cher/static/media/JordiArmengolChertoCV.45ec1ded.png",
     "static/media/jordiCV.9c62e2cb.pdf": "/portafolio-cher/static/media/jordiCV.9c62e2cb.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.a280d16c.js",
-    "static/js/2.2642288d.chunk.js",
+    "static/js/2.ffc962c6.chunk.js",
     "static/css/main.e3a25075.chunk.css",
-    "static/js/main.8957f47a.chunk.js"
+    "static/js/main.ef9d03dc.chunk.js"
   ]
 }
