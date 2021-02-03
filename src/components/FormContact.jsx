@@ -12,11 +12,11 @@ const FormContact = () => {
         console.log(e)
         axios({
             method: "post",
-            url: 'https://formspree.io/f/mzbkwbl', /* n */
+            url: 'https://formspree.io/f/mzbkwbln',
             data: e
         }).then(function (response) {
             console.log(response);
-            toast('Se ha enviado el correo!', {
+            toast('Se ha enviado el formulario!', {
                 type: 'success',
                 position: "top-center",
                 autoClose: 5000,
@@ -40,16 +40,6 @@ const FormContact = () => {
                 });
             });
     }
-    toast('Error!, no se ha podido enviar', {
-        type: 'error',
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-    });
 
     return (
         <Fragment>
@@ -168,17 +158,9 @@ const FormContact = () => {
                               Enviar
                             </button>
                     </div>
-
-
                 </div>
-
-
             </form>
         </Fragment>
-
-
-
-
     )
 }
 

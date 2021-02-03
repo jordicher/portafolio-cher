@@ -29,8 +29,8 @@ const Contact = () => {
             </div>
             <br />
 
-           {/*  {seeForm ? <FormContact/> : null} */}
-           <FormContact/>
+           {seeForm ? <FormContact/> : null}
+           
         </div>
     )
 }
