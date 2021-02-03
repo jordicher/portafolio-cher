@@ -28,7 +28,7 @@ const AboutMe = () => {
                     <h1 className="text-green-600 text-2xl font-bold">Sobre mi</h1>
                     <h3 className="p-3">Buenos días, me llamo Jordi Armengol Cherto</h3>
                     <p className="text-justify mx-2 sm:m-0">
-                        Soy un Programador Web. Me inicié en la programación web a finales de 2019, después de finalizar los estudios universitarios. Inicie una bootcamp, una vez finalizada, estudie una formación profesional que se convalida como un grado superior, mientras profundizaba en la autoformación.
+                        Soy un Programador Web. Me inicié en la programación web a finales de 2019, después de finalizar los estudios universitarios. Inicie una bootcamp, una vez concluida, estudie Desarollo de Aplicaciones Web, mientras profundizaba en la autoformación.
                         <br/> Actualmente estoy formándome en React y especializándome en el <span className="font-bold"> Front-end</span>.
                     </p>
 
