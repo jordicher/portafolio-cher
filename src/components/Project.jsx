@@ -12,7 +12,7 @@ export const Project = ({project}) => {
                 <div className=" relative px-6 py-6 md:py-12 lg:py-6 pt-10" /* style={{                                    
                                     backgroundImage: "url('https://raw.githubusercontent.com/jordicher/parejas/master/img/jugando.png')"            
                                 }} */> <div className="absolute top-0 left-0 opacity-10 w-full h-full bg-contain bg-center bg-no-repeat" style={{
-                        backgroundImage: `url(${project.img})`
+                        backgroundImage: `url(/images/${project.img})`
                     }} />
 
                     <div className="relative">
