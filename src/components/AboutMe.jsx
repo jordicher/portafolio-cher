@@ -22,7 +22,7 @@ const AboutMe = () => {
 
             <div className="container mx-auto text-center font-mono grid grid-cols-1 sm:grid-cols-3 content-between gap-3" id="sobreMi">
 
-                <img src={fotoCV} alt="foto personal" className="mx-auto h-full sm:h-1/2 lg:h-full my-auto" />
+                <img src={fotoCV} alt="foto personal" className="m-auto h-full sm:h-1/2 lg:h-full" />
 
                 <div className="col-span-2 mx-2">
                     <h1 className="text-green-600 text-2xl font-bold">Sobre mi</h1>
