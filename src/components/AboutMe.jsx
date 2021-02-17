@@ -24,7 +24,7 @@ const AboutMe = () => {
 
                 <img src={fotoCV} alt="foto personal" className="mx-auto h-full sm:h-1/2 lg:h-full my-auto" />
 
-                <div className="col-span-2">
+                <div className="col-span-2 mx-2">
                     <h1 className="text-green-600 text-2xl font-bold">Sobre mi</h1>
                     <h3 className="p-3">Buenos días, me llamo Jordi Armengol Cherto</h3>
                     <p className="text-justify mx-2 sm:m-0">

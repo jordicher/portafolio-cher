@@ -54,7 +54,7 @@ const Menu = () => {
                             <li>
                                 <a
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#contact"
+                                    href="#contacto"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
                                     <span className="ml-2">Contacto</span>

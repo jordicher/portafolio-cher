@@ -4,9 +4,9 @@ import FormContact from './FormContact'
 const Contact = () => {
     const [seeForm, setSeeForm] = useState(false);
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto" id="contacto">
             <h1 className="mt-10 text-green-600 text-3xl font-bold text-center">Contacto</h1>
-            <p className="text-center my-3">
+            <p className="text-center m-3">
                 Actualmente estoy buscando nuevas oportunidades. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responderle!
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
