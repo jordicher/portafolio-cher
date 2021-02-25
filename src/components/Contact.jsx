@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import FormContact from './FormContact'
 
 const Contact = () => {
-    const [seeForm, setSeeForm] = useState(false);
+   
     return (
         <div className="container mx-auto" id="contacto">
             <h1 className="mt-10 text-green-600 text-3xl font-bold text-center">Contacto</h1>
             <p className="text-center m-3">
                 Actualmente estoy buscando nuevas oportunidades. Ya sea que tenga una pregunta o simplemente quiera saludar, ¡haré todo lo posible para responderle!
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
                 <a className="px-2 py-3 flex justify-center items-center bg-gradient-to-r from-green-400 to-green-600 rounded text-white font-semibold hover:transition-colors hover:bg-gradient-to-tr transform transition hover:scale-110 ease-out duration-300 hover:shadow-md mx-auto"
                     href="mailto:jordisodiac@gmail.com" >
@@ -17,9 +17,7 @@ const Contact = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                     </svg> <span className="font-bold ml-2 text-xl">Email</span></a>
 
-                <button className="px-2 py-3 flex justify-center items-center bg-gradient-to-r from-green-400 to-green-600 rounded text-white font-semibold hover:transition-colors hover:bg-gradient-to-tr transform transition hover:scale-110 ease-out duration-300 hover:shadow-md mx-auto" onClick={()=> setSeeForm(!seeForm)}>
-                    
-                    <span className="font-bold ml-2 text-xl">Formulario </span></button>
+            
 
                 <a className="px-2 py-3 flex justify-center items-center bg-gradient-to-r from-green-400 to-green-600 rounded text-white font-semibold hover:transition-colors hover:bg-gradient-to-tr transform transition hover:scale-110 ease-out duration-300 hover:shadow-md mx-auto" href="https://www.linkedin.com/in/cherto" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">
 
@@ -29,7 +27,7 @@ const Contact = () => {
             </div>
             <br />
 
-           {seeForm ? <FormContact/> : null}
+        <FormContact/>
            
         </div>
     )

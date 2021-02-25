@@ -5,19 +5,20 @@ const Menu = () => {
 
     return (
         <Fragment>
-            <nav className="relative flex flex-wrap items-center justify-between px-2 py-2 navbar-expand-lg bg-green-500">
+            <nav className="fixed w-full flex flex-wrap items-center justify-between px-2 py-2 navbar-expand-lg bg-charcoal text-lg z-10">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start items-center">
                         <a
-                            className="text-white"
+                            className="text-white font-bold border-2 border-persian p-2"
                             href="/portafolio-cher"                           
                         >
-                            <svg className="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          {/*   <svg className="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                            </svg>
+                            </svg> */}
+                            JC
                         </a>
                         <button
-                            className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                            className="text-white cursor-pointer leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
@@ -35,7 +36,7 @@ const Menu = () => {
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li>
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white hover:opacity-75"
                                     href="#sobreMi"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
@@ -44,7 +45,7 @@ const Menu = () => {
                             </li>
                             <li>
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white hover:opacity-75"
                                     href="#proyectos"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
@@ -53,7 +54,7 @@ const Menu = () => {
                             </li>
                             <li>
                                 <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                                    className="px-3 py-2 flex items-center uppercase font-bold leading-snug text-white hover:opacity-75"
                                     href="#contacto"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
