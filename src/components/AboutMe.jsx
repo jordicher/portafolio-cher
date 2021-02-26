@@ -6,7 +6,7 @@ import cv from '../jordiCV.pdf'
 const AboutMe = ({ data }) => {    
     return (
         <Fragment>
-            <div className="container mx-auto text-center font-mono text-xl" id="sobreMi">
+            <div className="container mx-auto text-center text-xl" id="sobreMi">
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 content-between gap-3 mx-5 lg:m-0 space-y-6" >
 
@@ -35,7 +35,7 @@ const AboutMe = ({ data }) => {
 
                     <div className="col-span-2 text-left">
                         <h4 className="text-persian text-3xl text-center font-bold" >{data.skills.title}</h4>
-                        <ul className="list-inside font-mono list-disc">
+                        <ul className="list-inside list-disc">
                             {data.skills.languages.map(skill => <li key={uuid()}>{skill}</li>)}                        
                         </ul>
 
@@ -46,7 +46,7 @@ const AboutMe = ({ data }) => {
 
                     <div className="col-span-1 text-left">
                         <h4 className="text-persian text-3xl text-center font-bold">{data.hobbies.title}</h4>
-                        <ul className="list-inside font-mono list-disc">
+                        <ul className="list-inside list-disc">
                             {data.hobbies.hobby.map( pastime => <li key={uuid()}>{pastime}</li> )}                            
                         </ul>
                         <p className="my-2">{data.hobbies.paragraph}
