@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portafolio-cher/static/css/main.aae37160.chunk.css",
-    "main.js": "/portafolio-cher/static/js/main.c38953a5.chunk.js",
-    "main.js.map": "/portafolio-cher/static/js/main.c38953a5.chunk.js.map",
+    "main.css": "/portafolio-cher/static/css/main.1bc29535.chunk.css",
+    "main.js": "/portafolio-cher/static/js/main.42a1cfb5.chunk.js",
+    "main.js.map": "/portafolio-cher/static/js/main.42a1cfb5.chunk.js.map",
     "runtime-main.js": "/portafolio-cher/static/js/runtime-main.a280d16c.js",
     "runtime-main.js.map": "/portafolio-cher/static/js/runtime-main.a280d16c.js.map",
     "static/css/2.e5940d02.chunk.css": "/portafolio-cher/static/css/2.e5940d02.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.ee98677c.chunk.js.map": "/portafolio-cher/static/js/2.ee98677c.chunk.js.map",
     "index.html": "/portafolio-cher/index.html",
     "static/css/2.e5940d02.chunk.css.map": "/portafolio-cher/static/css/2.e5940d02.chunk.css.map",
-    "static/css/main.aae37160.chunk.css.map": "/portafolio-cher/static/css/main.aae37160.chunk.css.map",
+    "static/css/main.1bc29535.chunk.css.map": "/portafolio-cher/static/css/main.1bc29535.chunk.css.map",
     "static/js/2.ee98677c.chunk.js.LICENSE.txt": "/portafolio-cher/static/js/2.ee98677c.chunk.js.LICENSE.txt",
     "static/media/JordiArmengolChertoCV.45ec1ded.png": "/portafolio-cher/static/media/JordiArmengolChertoCV.45ec1ded.png",
     "static/media/codeThink.e972d9d0.svg": "/portafolio-cher/static/media/codeThink.e972d9d0.svg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.a280d16c.js",
     "static/css/2.e5940d02.chunk.css",
     "static/js/2.ee98677c.chunk.js",
-    "static/css/main.aae37160.chunk.css",
-    "static/js/main.c38953a5.chunk.js"
+    "static/css/main.1bc29535.chunk.css",
+    "static/js/main.42a1cfb5.chunk.js"
   ]
 }
