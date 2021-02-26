@@ -26,7 +26,7 @@ function App() {
   
         <Contact data={language.Contact}/>
     </div>
-      <Footer />
+      <Footer data={language.Footer}/>
 
     </Fragment>
   );

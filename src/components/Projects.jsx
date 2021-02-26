@@ -35,7 +35,7 @@ const Projects = ({data}) => {
 
                         projectDB
                             ?
-                            projectDB.map(project => <ProjectCard project={project} key={uuid()} />)
+                            projectDB.map(project => <ProjectCard project={project} key={uuid()} data={data} />)
                  /*           projectDB.map(project => <Project project={project} key={uuid()} />) */
                             : 
                             <div className="w-full col-span-3">

@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const ProjectCard = ({project}) => {
+export const ProjectCard = ({project, data}) => {
+
     return (
         <div className="w-full" >
             <div className="mx-auto bg-white rounded-lg overflow-hidden border min-h-full ">
@@ -17,7 +18,10 @@ export const ProjectCard = ({project}) => {
 
                     <div className="relative">
                         <div className="font-bold text-xl lg:text-2xl mb-2 border-l-4 border-green-300 rounded pl-6 text-primary-grey " >{project.tecnologias}</div>
-                        <p className="text-grey-darker py-4 md:h-box-text text-center text-lg lg:text-xl"> {project.descripcion}
+                        <p className="text-grey-darker py-4 md:h-box-text text-center text-lg lg:text-xl"> 
+                        {
+                          data.title === "Projects" ? project.description[2] : project.description[0]
+                        }
                         </p>
 
 

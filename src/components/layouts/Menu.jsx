@@ -23,7 +23,7 @@ const Menu = ({ data, setlanguage }) => {
                         {/* languages */}
 
 
-                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.catala)}>
+                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.catalan)}>
                             <img className="h-10" src={catalanFlag} alt="català" />
                         </button>
                         <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.english)}>
