@@ -8,9 +8,9 @@ const Welcome = () => {
             <div className="container mx-auto text-center my-auto">
                 <h1 className="text-5xl lg:text-7xl" data-reveal-delay="200">Jordi Armengol Cherto</h1>
 
-                <h3 className="text-3xl lg:text-4xl pl-3 py-3">Soy programador junior</h3>
+                <h3 className="text-3xl lg:text-4xl pl-3 py-3">Programador junior</h3>
 
-                <p className="text-2xl lg:text-3xl p-3 font-sans">
+                <p className="text-2xl lg:text-3xl p-3 font-sans tracking-wide leading-10">
                     Después de realizar una carrera universitaria, descubrí la programación web, y desde ese momento ya no he podido parar.
             </p>
             </div>

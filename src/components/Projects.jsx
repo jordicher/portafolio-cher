@@ -23,15 +23,15 @@ const Projects = () => {
         getProjects();
     }, [])
     return (
-        <div className="bg-gray-200">
+        <div className="bg-gray-200" id="proyectos">
 
-            <div className="container mx-auto flex flex-wrap py-10" id="proyectos">
+            <div className="container mx-auto flex flex-wrap pt-10" >
 
      {/*            <BuildingWebsite className="w-1/2"/> */}
 
                 <h1 className="mb-3 text-charcoal text-4xl font-bold text-center">Proyectos</h1>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-20">                    
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-20 py-10">                    
 
                     {
 

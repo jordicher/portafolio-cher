@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify'
@@ -42,8 +42,9 @@ const FormContact = () => {
     }
 
     return (
-        <Fragment>
-            <ToastContainer />           
+        <div>
+            <ToastContainer />     
+           
             <form
                 onSubmit={handleSubmit(submitForm)}>
 
@@ -160,7 +161,7 @@ const FormContact = () => {
                     </div>
                 </div>
             </form>
-        </Fragment>
+        </div>
     )
 }
 

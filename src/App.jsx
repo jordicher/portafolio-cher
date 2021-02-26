@@ -14,11 +14,13 @@ function App() {
     <Fragment>
 
       <Menu />
-      <Welcome/>
-      <AboutMe />
-      <Projects />
-
-      <Contact />
+    <div className="space-y-10">
+        <Welcome/>
+        <AboutMe />
+        <Projects />
+  
+        <Contact />
+    </div>
       <Footer />
 
     </Fragment>
