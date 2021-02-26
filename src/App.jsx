@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Menu from './components/layouts/Menu';
 import Footer from './components/layouts/Footer';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,18 +8,23 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Welcome from './components/Welcome'
 
+import JsonData from './data/data.json';
 
-function App() {
+
+function App() {  
+
+  const [language, setlanguage] = useState(JsonData.spanish);
+
   return (
     <Fragment>
 
-      <Menu />
+      <Menu data={language.Nav} setlanguage={setlanguage}/>
     <div className="space-y-10">
-        <Welcome/>
-        <AboutMe />
-        <Projects />
+        <Welcome data={language.Header}/>
+        <AboutMe data={language.About}/>
+        <Projects data={language.Projects}/>
   
-        <Contact />
+        <Contact data={language.Contact}/>
     </div>
       <Footer />
 

@@ -1,22 +1,39 @@
 import React, { Fragment } from "react";
+import JsonData from '../../data/data.json';
 
-const Menu = () => {
+import catalanFlag from '../../img/catalan.png'
+import englishFlag from '../../img/english.png'
+import spanishFlag from '../../img/spanish.png'
+
+const Menu = ({ data, setlanguage }) => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
 
     return (
         <Fragment>
             <nav className="fixed w-full flex flex-wrap items-center justify-between px-2 py-2 navbar-expand-lg bg-charcoal text-lg z-10">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start items-center">
+
+                    <div className="w-full relative flex justify-between lg:w-auto items-center">
                         <a
-                            className="text-white font-bold border-2 border-persian p-2"
-                            href="/portafolio-cher"                           
+                            className="text-white font-bold border-2 border-persian p-2 my-auto"
+                            href="/portafolio-cher"
                         >
-                          {/*   <svg className="h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                            </svg> */}
                             JC
                         </a>
+                        {/* languages */}
+
+
+                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.catala)}>
+                            <img className="h-10" src={catalanFlag} alt="català" />
+                        </button>
+                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.english)}>
+                            <img className="h-10" src={englishFlag} alt="English" />
+                        </button>
+                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.spanish)}>
+                            <img className="h-10" src={spanishFlag} alt="español" />
+                        </button>
+
+
                         <button
                             className="text-white cursor-pointer leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
@@ -40,7 +57,7 @@ const Menu = () => {
                                     href="#sobreMi"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
-                                    <span className="ml-2">Sobre Mi</span>
+                                    <span className="ml-2">{data.about}</span>
                                 </a>
                             </li>
                             <li>
@@ -49,7 +66,7 @@ const Menu = () => {
                                     href="#proyectos"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
-                                    <span className="ml-2">Proyectos</span>
+                                    <span className="ml-2">{data.projects}</span>
                                 </a>
                             </li>
                             <li>
@@ -58,7 +75,7 @@ const Menu = () => {
                                     href="#contacto"
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
-                                    <span className="ml-2">Contacto</span>
+                                    <span className="ml-2">{data.contact}</span>
                                 </a>
                             </li>
                         </ul>

@@ -4,7 +4,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify'
 
 
-const FormContact = () => {
+const FormContact = ({data}) => {
 
     const { register, errors, handleSubmit } = useForm();
 
@@ -87,7 +87,7 @@ const FormContact = () => {
                             </div>
 
 
-                            <label className="text-sm md:text-lg">Nombre*</label>
+                            <label className="text-sm md:text-lg">{data.name}*</label>
                             <div className="w-full inline-flex border">
                                 <div className="w-1/12 pt-2 bg-gray-100 ">
                                     <svg
@@ -124,7 +124,7 @@ const FormContact = () => {
 
                         </div>
 
-                        <span className="text-sm">*Campos obligatorios</span>
+                        <span className="text-sm">*{data.fields}</span>
                     </div>
 
                 </div>
@@ -132,7 +132,7 @@ const FormContact = () => {
                 <div>
                     <div className="md:w-2/3 mx-auto max-w-sm">
                         <div>
-                            <label className="text-sm md:text-lg text-black">Contenido</label>
+                            <label className="text-sm md:text-lg text-black">{data.content}</label>
                             <div>
 
                                 <textarea className="w-full border-purple-200 border rounded" rows="5" name="descripcion" ref={register}></textarea>
@@ -156,7 +156,7 @@ const FormContact = () => {
                                     d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
                                 />
                             </svg>
-                              Enviar
+                              {data.send}
                             </button>
                     </div>
                 </div>

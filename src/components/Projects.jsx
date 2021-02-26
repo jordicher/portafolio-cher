@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../firebase'
 import  ProjectCard  from './ProjectCard';
-
 import uuid from 'react-uuid'
-import { ReactComponent as BuildingWebsite } from '../img/buildingWebsite.svg'
-import Project from './Project';
 
-const Projects = () => {
+
+const Projects = ({data}) => {
 
     const [projectDB, setprojectDB] = useState();
 
@@ -29,7 +27,7 @@ const Projects = () => {
 
      {/*            <BuildingWebsite className="w-1/2"/> */}
 
-                <h1 className="mb-3 text-charcoal text-4xl font-bold text-center">Proyectos</h1>
+                <h1 className="mb-3 text-charcoal text-4xl font-bold text-center">{data.title}</h1>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-20 py-10">                    
 
