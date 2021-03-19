@@ -22,7 +22,7 @@ const AboutMe = ({ data }) => {
                             </p>
                         </div>
 
-                        <a className="uppercase p-1 flex items-center border border-green-600 text-green-600 max-w-max shadow-sm hover:shadow-lg rounded-full h-12 mx-auto my-5" href={cv} target="_blank" rel="noopener noreferrer">
+                        <a className="uppercase p-8 flex items-center border border-green-600 text-green-600 max-w-max shadow-sm hover:shadow-lg rounded-full h-12 mx-auto my-5" href={cv} target="_blank" rel="noopener noreferrer">
                         {data.download}
                                     <svg className="h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -34,7 +34,7 @@ const AboutMe = ({ data }) => {
 
 
                     <div className="col-span-2 text-left">
-                        <h4 className="text-persian text-3xl text-center font-bold" >{data.skills.title}</h4>
+                        <h4 className="text-persian text-3xl font-bold" >{data.skills.title}</h4>
                         <ul className="list-inside list-disc">
                             {data.skills.languages.map(skill => <li key={uuid()}>{skill}</li>)}                        
                         </ul>
@@ -45,7 +45,7 @@ const AboutMe = ({ data }) => {
                     </div>
 
                     <div className="col-span-1 text-left">
-                        <h4 className="text-persian text-3xl text-center font-bold">{data.hobbies.title}</h4>
+                        <h4 className="text-persian text-3xl font-bold">{data.hobbies.title}</h4>
                         <ul className="list-inside list-disc">
                             {data.hobbies.hobby.map( pastime => <li key={uuid()}>{pastime}</li> )}                            
                         </ul>
