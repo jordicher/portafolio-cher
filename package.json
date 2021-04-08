@@ -1,8 +1,7 @@
 {
   "name": "portfoli",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "http://jordicher.github.io/portafolio-cher",
+  "private": true,  
   "dependencies": {
     "@craco/craco": "6.0.0",
     "@tailwindcss/postcss7-compat": "2.0.2",
@@ -23,17 +22,23 @@
     "web-vitals": "0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",   
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
+    "env": {
+      "cypress/globals": true
+    },
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "plugins": [
+      "cypress"
     ]
   },
   "browserslist": {
@@ -49,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "3.1.0"
+    "cypress": "6.8.0",
+    "eslint-plugin-cypress": "2.11.2"
   }
 }
