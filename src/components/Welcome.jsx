@@ -17,6 +17,7 @@ const Welcome = ({ data }) => {
 
             {/* <img src={codeThinking} alt="" className="bg-red-200"/> */}
             <CodeThink className="h-auto w-1/2" />
+            
         </div>
     )
 }

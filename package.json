@@ -21,8 +21,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "web-vitals": "0.2.4"
   },
-  "scripts": {
-    "predeploy": "npm run build",   
+  "scripts": {  
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

@@ -1,34 +1,13 @@
-import React, { Fragment, useState } from "react";
-import Menu from './components/layouts/Menu';
-import Footer from './components/layouts/Footer';
+import React from "react";
 import 'react-toastify/dist/ReactToastify.css';
+import PublicLayout from "./layouts/PublicLayout";
 
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Welcome from './components/Welcome'
-
-import JsonData from './data/data.json';
-
-
-function App() {  
-
-  const [language, setlanguage] = useState(JsonData.spanish);
-
+function App() {
   return (
-    <Fragment>
+    <>
+      <PublicLayout />
 
-      <Menu data={language.Nav} setlanguage={setlanguage}/>
-    <div className="space-y-10">
-        <Welcome data={language.Header}/>
-        <AboutMe data={language.About}/>
-        <Projects data={language.Projects}/>
-  
-        <Contact data={language.Contact}/>
-    </div>
-      <Footer data={language.Footer}/>
-
-    </Fragment>
+    </>
   );
 }
 

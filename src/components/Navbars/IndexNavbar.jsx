@@ -5,36 +5,37 @@ import catalanFlag from '../../img/catalan.png'
 import englishFlag from '../../img/english.png'
 import spanishFlag from '../../img/spanish.png'
 
-const Menu = ({ data, setlanguage }) => {
+const IndexNavbar = ({ data, setlanguage }) => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
 
     return (
         <Fragment>
-            <nav className="fixed w-full flex flex-wrap items-center justify-between px-2 py-2 navbar-expand-lg bg-charcoal text-lg z-10">
+            <nav className="w-full flex flex-wrap items-center justify-between px-2 py-2 navbar-expand-lg bg-charcoal text-lg z-10">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
 
                     <div className="w-full relative flex justify-between lg:w-auto items-center">
                         <a
                             className="text-white font-bold border-2 border-persian p-2 my-auto"
-                            href="/portafolio-cher"
+                            href="/"
                         >
                             JC
                         </a>
                         {/* languages */}
 
 
-                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.catalan)}>
+                        <button aria-label="Idioma català" className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.catalan)}>
                             <img className="h-10" src={catalanFlag} alt="català" />
                         </button>
-                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.english)}>
+                        <button aria-label="English language" className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.english)}>
                             <img className="h-10" src={englishFlag} alt="English" />
                         </button>
-                        <button className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.spanish)}>
+                        <button aria-label="Idioma español" className="px-3 py-2 items-center hover:opacity-75" onClick={() => setlanguage(JsonData.spanish)}>
                             <img className="h-10" src={spanishFlag} alt="español" />
                         </button>
 
 
                         <button
+                            aria-label="Open Close Menu"
                             className="text-white cursor-pointer leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
@@ -86,5 +87,5 @@ const Menu = ({ data, setlanguage }) => {
     );
 }
 
-export default Menu;
+export default IndexNavbar;
 
