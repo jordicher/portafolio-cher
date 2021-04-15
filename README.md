@@ -5,8 +5,8 @@ Esta creado con React, TailwindCss.
 
 Los proyectos los carga a partir de una base de datos, firebase, dado que github pages solo acepta páginas estáticas.
 
-## Github pages
-https://jordicher.github.io/portafolio-cher/
+## Online
+https://cherto.es/
 
 Tras descargar una copia del proyecto es necesario instalar los paquetes de los que depende.
 Es necesario tener npm instalado en el destino.
